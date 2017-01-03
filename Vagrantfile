@@ -15,7 +15,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Webserver
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
+  # For bindshell
+  config.vm.network "forwarded_port", guest: 12345, host: 12345
+
   config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    sudo locale-gen UTF-8
     apt-get -y install gdb
     cp -r /vagrant/usr_local_nginx /usr/local/nginx
     echo "FLAG{your_flag_here}" > /flag
