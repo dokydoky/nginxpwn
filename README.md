@@ -1,5 +1,21 @@
 # Exploitation Training -- CVE-2013-2028: Nginx Stack Based Buffer Overflow
 
+Original repository : https://github.com/kitctf/nginxpwn
+I edited the Vagrantfile and add exploit codes.
+I also write a tutorial that explain how to solve it. If you are interested, refer to following links.
+
+[English Version]
+writing...
+
+[Korean Version]
+1) Explaination of vulnerable source code: http://dokydoky.tistory.com/448
+2) How to Exploit in the environment of NX : http://dokydoky.tistory.com/449
+3) How to Exploit in the environment of NX, ASLR : http://dokydoky.tistory.com/450
+4) How to Exploit in the environment of NX, ASLR, Canary : http://dokydoky.tistory.com/451
+
+Original READMD.md is following
+
+
 This repository contains the nginx 1.4.0 source code as well as precompiled binaries (with and without stack cookies).
 There's also a Vagrantfile for easy setup.
 
